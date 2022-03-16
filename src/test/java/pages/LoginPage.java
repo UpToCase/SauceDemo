@@ -8,13 +8,14 @@ public class LoginPage extends BasePage {
     public static final By PASSWORD_INPUT = By.id("password");
     public static final By LOGIN_BUTTON = By.id("login-button");
     public static final By ERROR_MESSAGES = By.cssSelector("[data-test=error]");
+    String page = "https://www.saucedemo.com/";
 
     public LoginPage(WebDriver driver) {
         super(driver);
     }
 
     public void openPage() {
-        driver.get("https://www.saucedemo.com/");
+        driver.get(page);
     }
 
     public void login(String user, String password) {
