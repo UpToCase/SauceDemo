@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public abstract class BasePage {
     WebDriver driver;
     WebDriverWait wait;
-    String page = "https://www.saucedemo.com/";
+    String url = "https://www.saucedemo.com/";
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
