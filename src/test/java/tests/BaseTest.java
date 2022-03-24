@@ -19,6 +19,7 @@ public abstract class BaseTest {
     CartPage cartPage;
     CheckoutPage checkoutPage;
     OverviewPage overviewPage;
+    BurgerButtonPage burgerButtonPage;
 
     @BeforeMethod
     public void setUp() {
@@ -32,6 +33,7 @@ public abstract class BaseTest {
         cartPage = new CartPage(driver);
         checkoutPage = new CheckoutPage(driver);
         overviewPage = new OverviewPage(driver);
+        burgerButtonPage = new BurgerButtonPage(driver);
     }
 
     @AfterMethod(alwaysRun = true)
